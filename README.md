@@ -1,4 +1,24 @@
-# Tech interview smart contracts coding problem
+# Fake tech interview smart contracts coding problem
+
+WARNING: 
+https://security.snyk.io/vuln/SNYK-JS-CHAIAWAITUTILS-14152240
+
+Introduced: 30 Nov 2025
+Malicious
+CVE NOT AVAILABLE
+CWE-506
+How to fix?
+Avoid using all malicious instances of the chai-await-utils package.
+
+Overview
+chai-await-utils is a malicious package. This package contains malicious code associated with a social engineering campaign called "Contagious Interview." The attackers target developers through fake job interviews or coding test assignments that require the installation of this package. Once installed, the package acts as a loader for the OtterCookie malware, which connects to a remote server to download and execute a payload granting the attackers full remote access to the victim's system. This malware is designed to steal cryptocurrency wallets, log keystrokes, capture screenshots, and exfiltrate sensitive credentials and files.
+
+References
+TheHackerNews Article
+https://thehackernews.com/2025/11/north-korean-hackers-deploy-197-npm.html
+
+The malware, once launched, attempts to evade sandboxes and virtual machines, profiles the machine, and then establishes a command-and-control (C2) channel to provide the attackers with a remote shell, along with capabilities to steal clipboard contents, log keystrokes, capture screenshots, and gather browser credentials, documents, cryptocurrency wallet data, and seed phrases.
+
 
 This is a Solidity coding problem for tech interviews. It is designed to take **no more than a few hours**.
 

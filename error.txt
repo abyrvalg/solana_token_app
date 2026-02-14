@@ -1,0 +1,9 @@
+npm install --save-dev @nomicfoundation/hardhat-toolbox
+
+npm error code ENOVERSIONS
+npm error No versions available for chai-await-utils
+
+npm install --save-dev @nomicfoundation/hardhat-toolbox
+npm error code ENOVERSIONS
+npm error No versions available for chai-await-utils
+npm error A complete log of this run can be found in: ~/.npm/_logs/2026-02-14T20_23_34_952Z-debug-0.log
