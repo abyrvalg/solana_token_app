@@ -1,0 +1,177 @@
+ hardhat test
+
+
+
+  Lock
+    Deployment
+      1) Should set the right unlockTime
+      2) Should set the right owner
+      3) Should receive and store the funds to lock
+      4) Should fail if the unlockTime is not in the future
+    Withdrawals
+      Validations
+        5) Should revert with the right error if called too soon
+        6) Should revert with the right error if called from another account
+        7) Shouldn't fail if the unlockTime has arrived and the owner calls it
+      Events
+        8) Should emit an event on withdrawals
+      Transfers
+        9) Should transfer the funds to the owner
+
+  Contract: Token
+    ✔ has default values
+    ✔ can be minted (42ms)
+    ✔ can be burnt
+    once minted
+      ✔ can be transferred directly
+      ✔ can be transferred indirectly (50ms)
+      can record dividends
+        ✔ and disallows empty dividend
+        ✔ and keeps track of holders when minting and burning
+        10) and keeps track of holders when transferring
+        11) and compounds the payouts
+        12) and allows for withdrawals in-between payouts
+        13) and allows for withdrawals even after holder relinquishes tokens
+
+
+  7 passing (914ms)
+  13 failing
+
+  1) Lock
+       Deployment
+         Should set the right unlockTime:
+     ReferenceError: ethers is not defined
+      at deployOneYearLockFixture (file:///home/am/ws/2025/smart-contract-tech-interview/test/Lock.js:24:35)
+      at loadFixture (node_modules/.pnpm/@nomicfoundation+hardhat-network-helpers@1.1.0_hardhat@2.26.3_bufferutil@4.0.9_ts-node@_720a716064b1a0c5f64d7b01ab8de2d3/node_modules/@nomicfoundation/hardhat-network-helpers/src/loadFixture.ts:59:18)
+      at Context.<anonymous> (file:///home/am/ws/2025/smart-contract-tech-interview/test/Lock.js:34:36)
+
+  2) Lock
+       Deployment
+         Should set the right owner:
+     ReferenceError: ethers is not defined
+      at deployOneYearLockFixture (file:///home/am/ws/2025/smart-contract-tech-interview/test/Lock.js:24:35)
+      at loadFixture (node_modules/.pnpm/@nomicfoundation+hardhat-network-helpers@1.1.0_hardhat@2.26.3_bufferutil@4.0.9_ts-node@_720a716064b1a0c5f64d7b01ab8de2d3/node_modules/@nomicfoundation/hardhat-network-helpers/src/loadFixture.ts:59:18)
+      at Context.<anonymous> (file:///home/am/ws/2025/smart-contract-tech-interview/test/Lock.js:40:31)
+
+  3) Lock
+       Deployment
+         Should receive and store the funds to lock:
+     ReferenceError: ethers is not defined
+      at deployOneYearLockFixture (file:///home/am/ws/2025/smart-contract-tech-interview/test/Lock.js:24:35)
+      at loadFixture (node_modules/.pnpm/@nomicfoundation+hardhat-network-helpers@1.1.0_hardhat@2.26.3_bufferutil@4.0.9_ts-node@_720a716064b1a0c5f64d7b01ab8de2d3/node_modules/@nomicfoundation/hardhat-network-helpers/src/loadFixture.ts:59:18)
+      at Context.<anonymous> (file:///home/am/ws/2025/smart-contract-tech-interview/test/Lock.js:46:38)
+
+  4) Lock
+       Deployment
+         Should fail if the unlockTime is not in the future:
+     ReferenceError: ethers is not defined
+      at Context.<anonymous> (file:///home/am/ws/2025/smart-contract-tech-interview/test/Lock.js:58:20)
+
+  5) Lock
+       Withdrawals
+         Validations
+           Should revert with the right error if called too soon:
+     ReferenceError: ethers is not defined
+      at deployOneYearLockFixture (file:///home/am/ws/2025/smart-contract-tech-interview/test/Lock.js:24:35)
+      at loadFixture (node_modules/.pnpm/@nomicfoundation+hardhat-network-helpers@1.1.0_hardhat@2.26.3_bufferutil@4.0.9_ts-node@_720a716064b1a0c5f64d7b01ab8de2d3/node_modules/@nomicfoundation/hardhat-network-helpers/src/loadFixture.ts:59:18)
+      at Context.<anonymous> (file:///home/am/ws/2025/smart-contract-tech-interview/test/Lock.js:68:26)
+
+  6) Lock
+       Withdrawals
+         Validations
+           Should revert with the right error if called from another account:
+     ReferenceError: ethers is not defined
+      at deployOneYearLockFixture (file:///home/am/ws/2025/smart-contract-tech-interview/test/Lock.js:24:35)
+      at loadFixture (node_modules/.pnpm/@nomicfoundation+hardhat-network-helpers@1.1.0_hardhat@2.26.3_bufferutil@4.0.9_ts-node@_720a716064b1a0c5f64d7b01ab8de2d3/node_modules/@nomicfoundation/hardhat-network-helpers/src/loadFixture.ts:59:18)
+      at Context.<anonymous> (file:///home/am/ws/2025/smart-contract-tech-interview/test/Lock.js:76:52)
+
+  7) Lock
+       Withdrawals
+         Validations
+           Shouldn't fail if the unlockTime has arrived and the owner calls it:
+     ReferenceError: ethers is not defined
+      at deployOneYearLockFixture (file:///home/am/ws/2025/smart-contract-tech-interview/test/Lock.js:24:35)
+      at loadFixture (node_modules/.pnpm/@nomicfoundation+hardhat-network-helpers@1.1.0_hardhat@2.26.3_bufferutil@4.0.9_ts-node@_720a716064b1a0c5f64d7b01ab8de2d3/node_modules/@nomicfoundation/hardhat-network-helpers/src/loadFixture.ts:59:18)
+      at Context.<anonymous> (file:///home/am/ws/2025/smart-contract-tech-interview/test/Lock.js:90:38)
+
+  8) Lock
+       Withdrawals
+         Events
+           Should emit an event on withdrawals:
+     ReferenceError: ethers is not defined
+      at deployOneYearLockFixture (file:///home/am/ws/2025/smart-contract-tech-interview/test/Lock.js:24:35)
+      at loadFixture (node_modules/.pnpm/@nomicfoundation+hardhat-network-helpers@1.1.0_hardhat@2.26.3_bufferutil@4.0.9_ts-node@_720a716064b1a0c5f64d7b01ab8de2d3/node_modules/@nomicfoundation/hardhat-network-helpers/src/loadFixture.ts:59:18)
+      at Context.<anonymous> (file:///home/am/ws/2025/smart-contract-tech-interview/test/Lock.js:103:52)
+
+  9) Lock
+       Withdrawals
+         Transfers
+           Should transfer the funds to the owner:
+     ReferenceError: ethers is not defined
+      at deployOneYearLockFixture (file:///home/am/ws/2025/smart-contract-tech-interview/test/Lock.js:24:35)
+      at loadFixture (node_modules/.pnpm/@nomicfoundation+hardhat-network-helpers@1.1.0_hardhat@2.26.3_bufferutil@4.0.9_ts-node@_720a716064b1a0c5f64d7b01ab8de2d3/node_modules/@nomicfoundation/hardhat-network-helpers/src/loadFixture.ts:59:18)
+      at Context.<anonymous> (file:///home/am/ws/2025/smart-contract-tech-interview/test/Lock.js:117:59)
+
+  10) Contract: Token
+       once minted
+         can record dividends
+           and keeps track of holders when transferring:
+
+      AssertionError: expected [ …(2) ] to deeply equal [ …(2) ]
+      + expected - actual
+
+       [
+      -  "0x0000000000000000000000000000000000000000"
+      -  "0x0000000000000000000000000000000000000000"
+      +  "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc"
+      +  "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266"
+       ]
+
+      at assertHolderList (file:///home/am/ws/2025/smart-contract-tech-interview/test/token.test.js:16:22)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at Context.<anonymous> (file:///home/am/ws/2025/smart-contract-tech-interview/test/token.test.js:152:9)
+
+  11) Contract: Token
+       once minted
+         can record dividends
+           and compounds the payouts:
+     Error: Transaction reverted without a reason string
+    at Token.recordDividend (contracts/Token.sol:86)
+    at TruffleContract.recordDividend (node_modules/.pnpm/@nomiclabs+truffle-contract@4.5.10_bufferutil@4.0.9_encoding@0.1.13_utf-8-validate@5.0._c454f95353df822e061f570964b8d115/node_modules/@nomiclabs/truffle-contract/lib/execute.js:189:26)
+    at Context.<anonymous> (file:///home/am/ws/2025/smart-contract-tech-interview/test/token.test.js:169:21)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+
+  12) Contract: Token
+       once minted
+         can record dividends
+           and allows for withdrawals in-between payouts:
+
+      AssertionError: expected 2 to deeply equal 3
+      + expected - actual
+
+      -2
+      +3
+
+      at assertHolderList (file:///home/am/ws/2025/smart-contract-tech-interview/test/token.test.js:15:29)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at Context.<anonymous> (file:///home/am/ws/2025/smart-contract-tech-interview/test/token.test.js:202:9)
+
+  13) Contract: Token
+       once minted
+         can record dividends
+           and allows for withdrawals even after holder relinquishes tokens:
+
+      AssertionError: expected 2 to deeply equal 3
+      + expected - actual
+
+      -2
+      +3
+
+      at assertHolderList (file:///home/am/ws/2025/smart-contract-tech-interview/test/token.test.js:15:29)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at Context.<anonymous> (file:///home/am/ws/2025/smart-contract-tech-interview/test/token.test.js:229:9)
+
+
+
+ ELIFECYCLE  Test failed. See above for more details.

@@ -32,12 +32,8 @@ For a clearer understanding of how the code is supposed to work please refer to 
 
 Your Solution must pass the test: `pnpm run test` - run the tests (Hardhat)
 
-![Test Result](./test-result.png)
 
-### 3: Submission
+### 3. Notes:
+nvm use 20
 
-Record a short [Loom video](https://www.loom.com) showing how it works, including the expected and actual behavior if you're testing.
 
-### 4. Deadline
-
-Please complete and submit the result within 1 ~ 2 hours unless otherwise discussed.
