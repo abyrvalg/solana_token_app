@@ -20,6 +20,9 @@ https://thehackernews.com/2025/11/north-korean-hackers-deploy-197-npm.html
 The malware, once launched, attempts to evade sandboxes and virtual machines, profiles the machine, and then establishes a command-and-control (C2) channel to provide the attackers with a remote shell, along with capabilities to steal clipboard contents, log keystrokes, capture screenshots, and gather browser credentials, documents, cryptocurrency wallet data, and seed phrases.
 
 
+# Coding task
+## Solidity coding problem
+
 This is a Solidity coding problem for tech interviews. It is designed to take **no more than a few hours**.
 
 ## Getting setup
@@ -56,4 +59,10 @@ Your Solution must pass the test: `pnpm run test` - run the tests (Hardhat)
 ### 3. Notes:
 nvm use 20
 
+After creation set of smart contracts there were failed tests with:
+ReferenceError: ethers is not defined
+Stack overflow and AI in web browsers suggest fix (but failed and research point on the security issue with chai-await-utils):
+npm install --save-dev @nomicfoundation/hardhat-toolbox
+npm error code ENOVERSIONS
+npm error No versions available for chai-await-utils
 
