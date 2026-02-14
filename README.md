@@ -60,9 +60,14 @@ Your Solution must pass the test: `pnpm run test` - run the tests (Hardhat)
 nvm use 20
 
 After creation set of smart contracts there were failed tests with:
+
 ReferenceError: ethers is not defined
+
 Stack overflow and AI in web browsers suggest fix (but failed and research point on the security issue with chai-await-utils):
+
 npm install --save-dev @nomicfoundation/hardhat-toolbox
+
 npm error code ENOVERSIONS
+
 npm error No versions available for chai-await-utils
 
